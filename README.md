@@ -64,12 +64,12 @@ The backend for the **Airbnb Clone** project is designed to provide a robust and
 ---
 
 ## Database Design
-# key entities
-- User: name, reviews, bookingss, properties
-- Properties: name, reviews, bookings, amenities
-- Bookings: user, property, cost
-- Reviews: user, properties
-- Payments: amount
+### Key Entities
+- **User**: `name`, `reviews`, `bookings`, `properties`  
+- **Properties**: `name`, `reviews`, `bookings`, `amenities`  
+- **Bookings**: `user`, `property`, `cost`  
+- **Reviews**: `user`, `properties`  
+- **Payments**: `amount`
 
 ---
 
@@ -124,52 +124,51 @@ The backend for the **Airbnb Clone** project is designed to provide a robust and
 - `PUT /reviews/{review_id}/` - Update a specific review  
 - `DELETE /reviews/{review_id}/` - Delete a specific review
 
-## API Security
-- rate limit
-- authentication
-- authorization
+---
 
+## API Security
+- Rate limiting  
+- Authentication  
+- Authorization  
+
+---
 
 ## ⚙️ CI/CD Pipeline
 
 ### What is CI/CD?
-
 CI/CD stands for **Continuous Integration** and **Continuous Deployment/Delivery**. It’s a set of practices that automate the process of integrating code changes, running tests, and deploying applications. CI/CD pipelines are essential for maintaining high code quality, reducing manual errors, and speeding up development cycles.
 
 In the context of this Airbnb Clone backend, CI/CD ensures that every code change is automatically:
-
-- Built and tested
-- Checked for errors or issues
-- Deployed to a staging or production environment if it passes all tests
+- Built and tested  
+- Checked for errors or issues  
+- Deployed to a staging or production environment if it passes all tests  
 
 ### Why CI/CD is Important
+- **Reliability**: Automates repetitive tasks and reduces human error.  
+- **Speed**: Faster feedback loop for developers.  
+- **Quality**: Ensures each commit goes through testing and linting.  
+- **Scalability**: Makes it easier to deploy and maintain features as the project grows.  
 
-- **Reliability**: Automates repetitive tasks and reduces human error.
-- **Speed**: Faster feedback loop for developers.
-- **Quality**: Ensures each commit goes through testing and linting.
-- **Scalability**: Makes it easier to deploy and maintain features as the project grows.
+---
 
 ## 🎨 UI/UX Design Planning
 
 ### Design Goals
-
 The UI/UX design for the Airbnb Clone aims to deliver a seamless, intuitive, and visually appealing experience for both hosts and guests. The core principles guiding the design include:
-
-- **Simplicity**: Minimize friction in navigation and interactions.
-- **Responsiveness**: Ensure consistent experience across devices.
-- **Accessibility**: Adhere to accessibility best practices to make the platform usable by everyone.
-- **Efficiency**: Reduce the number of steps required to perform key actions like booking or listing a property.
+- **Simplicity**: Minimize friction in navigation and interactions.  
+- **Responsiveness**: Ensure consistent experience across devices.  
+- **Accessibility**: Adhere to accessibility best practices to make the platform usable by everyone.  
+- **Efficiency**: Reduce the number of steps required to perform key actions like booking or listing a property.  
 
 ---
 
 ### Key Features to Implement
-
-- **User-friendly Navigation**: Easy access to all primary pages and account controls.
-- **Search & Filtering**: Allow users to search properties by location, date, price, and amenities.
-- **Interactive Map Integration**: Visual browsing through map-based listings (future enhancement).
-- **Calendar Availability Picker**: For guests to choose available dates without backend rejections.
-- **Responsive Design**: Layout adapts gracefully to mobile, tablet, and desktop views.
-- **Dark Mode Support**: Optional theme toggle for user comfort.
+- **User-friendly Navigation**: Easy access to all primary pages and account controls.  
+- **Search & Filtering**: Allow users to search properties by location, date, price, and amenities.  
+- **Interactive Map Integration**: Visual browsing through map-based listings (future enhancement).  
+- **Calendar Availability Picker**: For guests to choose available dates without backend rejections.  
+- **Responsive Design**: Layout adapts gracefully to mobile, tablet, and desktop views.  
+- **Dark Mode Support**: Optional theme toggle for user comfort.  
 
 ---
 
@@ -183,41 +182,34 @@ The UI/UX design for the Airbnb Clone aims to deliver a seamless, intuitive, and
 
 ---
 
-
 ### 🖌️ Design Tokens (Figma)
 
-> Visit the Figma page [here](https://www.figma.com/file/your-design-link) *(Placeholder link)*
-
 #### 🎨 Color Styles
-- **Primary:** #FF5A5F (Airbnb Red)
-- **Secondary:** #00A699 (Teal)
-- **Accent:** #484848 (Dark Gray)
-- **Background:** #FFFFFF (White)
-- **Text:** #333333
+- **Primary:** `#FF5A5F` (Airbnb Red)  
+- **Secondary:** `#00A699` (Teal)  
+- **Accent:** `#484848` (Dark Gray)  
+- **Background:** `#FFFFFF` (White)  
+- **Text:** `#333333`  
 
 #### ✍️ Typography
-- **Font Family:** Inter
-- **Font Weights:** 400 (Regular), 600 (Semi-Bold), 700 (Bold)
-- **Sizes:** 14px (Body), 18px (Subheading), 24px (Heading), 32px (Hero Title)
+- **Font Family:** Inter  
+- **Font Weights:** `400` (Regular), `600` (Semi-Bold), `700` (Bold)  
+- **Sizes:** `14px` (Body), `18px` (Subheading), `24px` (Heading), `32px` (Hero Title)  
 
 #### 🧠 Why Define Design Properties?
 Identifying colors and typography early ensures consistency across the UI, speeds up development, and keeps designers and devs in sync when building from a mockup.
 
+---
 
 ### 🧩 UI Component Patterns
-
 This project uses reusable UI components to ensure consistency, scalability, and maintainability.
 
 #### Planned Components
-- **Navbar:** Responsive navigation bar with logo, links, and user actions (login/profile).
-- **Property Card:** Displays property image, title, price, rating, and location for quick browsing.
-- **Footer:** Contains links to support, policies, and social media.
+- **Navbar**: Responsive navigation bar with logo, links, and user actions (login/profile).  
+- **Property Card**: Displays property image, title, price, rating, and location for quick browsing.  
+- **Footer**: Contains links to support, policies, and social media.  
 
-
-
-
-
-
-- **GitHub Actions**: Automates workflows for testing and deployment on every push or pull request.
-- **Docker**: Ensures consistent runtime environments across development, staging, and production.
-- **PostgreSQL**: Integrated in the Docker setup for seamless testing of database-related features.
+#### CI/CD Tools
+- **GitHub Actions**: Automates workflows for testing and deployment on every push or pull request.  
+- **Docker**: Ensures consistent runtime environments across development, staging, and production.  
+- **PostgreSQL**: Integrated in the Docker setup for seamless testing of database-related features.  
