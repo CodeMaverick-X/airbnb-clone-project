@@ -17,7 +17,7 @@ The backend for the **Airbnb Clone** project is designed to provide a robust and
 
 ---
 
-## 🛠️ Features Overview
+## 🛠️ Features Breakdown
 
 ### 1. API Documentation
 - **OpenAPI Standard**: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.  
@@ -60,6 +60,16 @@ The backend for the **Airbnb Clone** project is designed to provide a robust and
 - **Redis**: Used for caching and session management.  
 - **Docker**: Ensures consistent development and deployment environments.  
 - **CI/CD Pipelines**: Automated pipelines for testing and deploying code changes.
+
+---
+
+## Database Design
+# key entities
+- User: name, reviews, bookingss, properties
+- Properties: name, reviews, bookings, amenities
+- Bookings: user, property, cost
+- Reviews: user, properties
+- Payments: amount
 
 ---
 
@@ -113,3 +123,34 @@ The backend for the **Airbnb Clone** project is designed to provide a robust and
 - `GET /reviews/{review_id}/` - Retrieve a specific review  
 - `PUT /reviews/{review_id}/` - Update a specific review  
 - `DELETE /reviews/{review_id}/` - Delete a specific review
+
+## API Security
+- rate limit
+- authentication
+- authorization
+
+
+## ⚙️ CI/CD Pipeline
+
+### What is CI/CD?
+
+CI/CD stands for **Continuous Integration** and **Continuous Deployment/Delivery**. It’s a set of practices that automate the process of integrating code changes, running tests, and deploying applications. CI/CD pipelines are essential for maintaining high code quality, reducing manual errors, and speeding up development cycles.
+
+In the context of this Airbnb Clone backend, CI/CD ensures that every code change is automatically:
+
+- Built and tested
+- Checked for errors or issues
+- Deployed to a staging or production environment if it passes all tests
+
+### Why CI/CD is Important
+
+- **Reliability**: Automates repetitive tasks and reduces human error.
+- **Speed**: Faster feedback loop for developers.
+- **Quality**: Ensures each commit goes through testing and linting.
+- **Scalability**: Makes it easier to deploy and maintain features as the project grows.
+
+### Tools Used
+
+- **GitHub Actions**: Automates workflows for testing and deployment on every push or pull request.
+- **Docker**: Ensures consistent runtime environments across development, staging, and production.
+- **PostgreSQL**: Integrated in the Docker setup for seamless testing of database-related features.
