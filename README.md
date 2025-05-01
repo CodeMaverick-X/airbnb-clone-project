@@ -73,7 +73,7 @@ The backend for the **Airbnb Clone** project is designed to provide a robust and
 
 ---
 
-## 👥 Team Roles
+## 👥 Project Roles and Responsibilities. [Team Roles]
 
 - **Backend Developer**: Implements API endpoints, database schemas, and business logic.  
 - **Database Administrator**: Manages database design, indexing, and optimizations.  
